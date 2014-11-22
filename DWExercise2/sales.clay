@@ -122,7 +122,7 @@
 <variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
 </data-type>
 </column>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="categoryID" remarks="" uid="2f5a092e:149c37ddb83:-7ff5">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="categoryId" remarks="" uid="2f5a092e:149c37ddb83:-7ff5">
 <column-description/>
 <data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
 <variant type-name-pattern="INTEGER"/>
@@ -267,7 +267,7 @@
 <foreign-key-figure>
 <fk-fig-bendpoint-list/>
 </foreign-key-figure>
-<foreign-key-column column-name="paymentId" referenced-key-column-name="paymentID"/>
+<foreign-key-column column-name="paymentId" referenced-key-column-name="paymentId"/>
 </foreign-key>
 <foreign-key alias="" name="FK_Sales_5" on-delete="" on-update="" referenced-key="PK_DATE" referenced-table="Date" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7c7e">
 <foreign-key-description/>
@@ -292,7 +292,7 @@
 <table-description/>
 <table-figure-bounds height="173" width="196" x="496" y="414"/>
 <column-list>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="paymentID" remarks="" uid="2f5a092e:149c37ddb83:-7f41">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="paymentId" remarks="" uid="2f5a092e:149c37ddb83:-7f41">
 <column-description/>
 <data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
 <variant type-name-pattern="INTEGER"/>
@@ -355,7 +355,7 @@
 </column-list>
 <primary-key alias="" name="PK_PAYMENT" remarks="" uid="2f5a092e:149c37ddb83:-7f44">
 <primary-key-description/>
-<primary-key-column name="paymentID"/>
+<primary-key-column name="paymentId"/>
 </primary-key>
 <unique-key-list/>
 <foreign-key-list/>
