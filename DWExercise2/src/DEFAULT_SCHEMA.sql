@@ -25,10 +25,10 @@ CREATE TABLE Payment (
 
 CREATE TABLE Date (
        dateId INTEGER NOT NULL
-     , day INTEGER
-     , month INTEGER
-     , quarter INTEGER
-     , year INTEGER
+     , day TINYINT
+     , month TINYINT
+     , quarter TINYINT
+     , year SMALLINT
      , PRIMARY KEY (dateId)
 );
 
@@ -50,9 +50,9 @@ CREATE TABLE Customer (
 
 CREATE TABLE Sales (
        orderNo INTEGER
-     , posNo INTEGER
+     , posNo SMALLINT
      , pricePerUnit DECIMAL(7,2)
-     , noOfUnits INTEGER
+     , noOfUnits SMALLINT
      , linePrice DECIMAL(7,2)
      , deliveryAddress VARCHAR(50)
      , remarks VARCHAR(160)
