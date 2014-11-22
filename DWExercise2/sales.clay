@@ -100,8 +100,8 @@
 <column alias="" auto-increment="false" column-size="14" decimal-digits="0" default-value="" mandatory="true" name="productEan" remarks="" uid="2f5a092e:149c37ddb83:-7ff9">
 <column-description/>
 <data-type jdbc-type="1" literal-prefix="'" literal-suffix="'" name="CHAR" selected-variant-pattern="CHAR(%n)">
-<variant type-name-pattern="CHAR"/>
 <variant precision-max="254" precision-min="1" precision-variable="%n" type-name-pattern="CHAR(%n)"/>
+<variant type-name-pattern="CHAR"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="salesUnit" remarks="" uid="2f5a092e:149c37ddb83:-7ff8">
@@ -161,8 +161,8 @@
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="posNo" remarks="" uid="2f5a092e:149c37ddb83:-7f4e">
 <column-description/>
-<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
-<variant type-name-pattern="INTEGER"/>
+<data-type jdbc-type="5" name="SMALLINT" selected-variant-pattern="SMALLINT">
+<variant type-name-pattern="SMALLINT"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="7" decimal-digits="2" default-value="" mandatory="false" name="pricePerUnit" remarks="" uid="2f5a092e:149c37ddb83:-7f4d">
@@ -175,8 +175,8 @@
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="noOfUnits" remarks="" uid="2f5a092e:149c37ddb83:-7f4c">
 <column-description/>
-<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
-<variant type-name-pattern="INTEGER"/>
+<data-type jdbc-type="5" name="SMALLINT" selected-variant-pattern="SMALLINT">
+<variant type-name-pattern="SMALLINT"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="7" decimal-digits="2" default-value="" mandatory="false" name="linePrice" remarks="" uid="2f5a092e:149c37ddb83:-7f4b">
@@ -373,26 +373,26 @@
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="day" remarks="" uid="2f5a092e:149c37ddb83:-7f32">
 <column-description/>
-<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
-<variant type-name-pattern="INTEGER"/>
+<data-type jdbc-type="-6" name="TINYINT" selected-variant-pattern="TINYINT">
+<variant type-name-pattern="TINYINT"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="month" remarks="" uid="2f5a092e:149c37ddb83:-7f31">
 <column-description/>
-<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
-<variant type-name-pattern="INTEGER"/>
+<data-type jdbc-type="-6" name="TINYINT" selected-variant-pattern="TINYINT">
+<variant type-name-pattern="TINYINT"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="quarter" remarks="" uid="2f5a092e:149c37ddb83:-7f30">
 <column-description/>
-<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
-<variant type-name-pattern="INTEGER"/>
+<data-type jdbc-type="-6" name="TINYINT" selected-variant-pattern="TINYINT">
+<variant type-name-pattern="TINYINT"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="year" remarks="" uid="2f5a092e:149c37ddb83:-7f2f">
 <column-description/>
-<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
-<variant type-name-pattern="INTEGER"/>
+<data-type jdbc-type="5" name="SMALLINT" selected-variant-pattern="SMALLINT">
+<variant type-name-pattern="SMALLINT"/>
 </data-type>
 </column>
 </column-list>
