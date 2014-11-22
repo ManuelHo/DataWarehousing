@@ -11,7 +11,7 @@
 <table-description/>
 <table-figure-bounds height="258" width="176" x="33" y="66"/>
 <column-list>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="customerID" remarks="" uid="22f79c09:149c29cbf8d:-7ffa">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="customerId" remarks="" uid="22f79c09:149c29cbf8d:-7ffa">
 <column-description/>
 <data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
 <variant type-name-pattern="INTEGER"/>
@@ -68,8 +68,8 @@
 <column alias="" auto-increment="false" column-size="1" decimal-digits="0" default-value="" mandatory="false" name="custType" remarks="" uid="22f79c09:149c29cbf8d:-7feb">
 <column-description/>
 <data-type jdbc-type="1" literal-prefix="'" literal-suffix="'" name="CHAR" selected-variant-pattern="CHAR(%n)">
-<variant type-name-pattern="CHAR"/>
 <variant precision-max="254" precision-min="1" precision-variable="%n" type-name-pattern="CHAR(%n)"/>
+<variant type-name-pattern="CHAR"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="20" decimal-digits="0" default-value="" mandatory="false" name="corporation" remarks="" uid="266ddc07:149d7332520:-7ff1">
@@ -87,17 +87,17 @@
 </column-list>
 <primary-key alias="" name="PK_CUSTOMER" remarks="" uid="22f79c09:149c29cbf8d:-7ffe">
 <primary-key-description/>
-<primary-key-column name="customerID"/>
+<primary-key-column name="customerId"/>
 </primary-key>
 <unique-key-list/>
 <foreign-key-list/>
 <index-list/>
 </table>
-<table alias="" name="Produkt" remarks="" uid="2f5a092e:149c37ddb83:-7ffd">
+<table alias="" name="Product" remarks="" uid="2f5a092e:149c37ddb83:-7ffd">
 <table-description/>
 <table-figure-bounds height="167" width="185" x="355" y="60"/>
 <column-list>
-<column alias="" auto-increment="false" column-size="14" decimal-digits="0" default-value="" mandatory="true" name="productean" remarks="" uid="2f5a092e:149c37ddb83:-7ff9">
+<column alias="" auto-increment="false" column-size="14" decimal-digits="0" default-value="" mandatory="true" name="productEan" remarks="" uid="2f5a092e:149c37ddb83:-7ff9">
 <column-description/>
 <data-type jdbc-type="1" literal-prefix="'" literal-suffix="'" name="CHAR" selected-variant-pattern="CHAR(%n)">
 <variant type-name-pattern="CHAR"/>
@@ -141,9 +141,9 @@
 </data-type>
 </column>
 </column-list>
-<primary-key alias="" name="PK_PRODUKT" remarks="" uid="2f5a092e:149c37ddb83:-7ffc">
+<primary-key alias="" name="PK_PRODUCT" remarks="" uid="2f5a092e:149c37ddb83:-7ffc">
 <primary-key-description/>
-<primary-key-column name="productean"/>
+<primary-key-column name="productEan"/>
 </primary-key>
 <unique-key-list/>
 <foreign-key-list/>
@@ -168,9 +168,9 @@
 <column alias="" auto-increment="false" column-size="7" decimal-digits="2" default-value="" mandatory="false" name="pricePerUnit" remarks="" uid="2f5a092e:149c37ddb83:-7f4d">
 <column-description/>
 <data-type jdbc-type="3" name="DECIMAL" selected-variant-pattern="DECIMAL(%p,%s)">
+<variant precision-max="31" precision-min="1" precision-variable="%p" scale-max="31" scale-min="0" scale-variable="%s" type-name-pattern="DECIMAL(%p,%s)"/>
 <variant type-name-pattern="DECIMAL"/>
 <variant precision-max="31" precision-min="1" precision-variable="%p" type-name-pattern="DECIMAL(%p)"/>
-<variant precision-max="31" precision-min="1" precision-variable="%p" scale-max="31" scale-min="0" scale-variable="%s" type-name-pattern="DECIMAL(%p,%s)"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="noOfUnits" remarks="" uid="2f5a092e:149c37ddb83:-7f4c">
@@ -182,9 +182,9 @@
 <column alias="" auto-increment="false" column-size="7" decimal-digits="2" default-value="" mandatory="false" name="linePrice" remarks="" uid="2f5a092e:149c37ddb83:-7f4b">
 <column-description/>
 <data-type jdbc-type="3" name="DECIMAL" selected-variant-pattern="DECIMAL(%p,%s)">
+<variant precision-max="31" precision-min="1" precision-variable="%p" scale-max="31" scale-min="0" scale-variable="%s" type-name-pattern="DECIMAL(%p,%s)"/>
 <variant type-name-pattern="DECIMAL"/>
 <variant precision-max="31" precision-min="1" precision-variable="%p" type-name-pattern="DECIMAL(%p)"/>
-<variant precision-max="31" precision-min="1" precision-variable="%p" scale-max="31" scale-min="0" scale-variable="%s" type-name-pattern="DECIMAL(%p,%s)"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="50" decimal-digits="0" default-value="" mandatory="false" name="deliveryAddress" remarks="" uid="2f5a092e:149c37ddb83:-7f4a">
@@ -220,8 +220,8 @@
 <column alias="" auto-increment="false" column-size="14" decimal-digits="0" default-value="" mandatory="true" name="productEan" remarks="" uid="2f5a092e:149c37ddb83:-7e73">
 <column-description/>
 <data-type jdbc-type="1" literal-prefix="'" literal-suffix="'" name="CHAR" selected-variant-pattern="CHAR(%n)">
-<variant type-name-pattern="CHAR"/>
 <variant precision-max="254" precision-min="1" precision-variable="%n" type-name-pattern="CHAR(%n)"/>
+<variant type-name-pattern="CHAR"/>
 </data-type>
 </column>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="paymentId" remarks="" uid="2f5a092e:149c37ddb83:-7e3f">
@@ -253,14 +253,14 @@
 <foreign-key-figure>
 <fk-fig-bendpoint-list/>
 </foreign-key-figure>
-<foreign-key-column column-name="customerId" referenced-key-column-name="customerID"/>
+<foreign-key-column column-name="customerId" referenced-key-column-name="customerId"/>
 </foreign-key>
-<foreign-key alias="" name="FK_Sales_3" on-delete="" on-update="" referenced-key="PK_PRODUKT" referenced-table="Produkt" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7e74">
+<foreign-key alias="" name="FK_Sales_3" on-delete="" on-update="" referenced-key="PK_PRODUCT" referenced-table="Product" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7e74">
 <foreign-key-description/>
 <foreign-key-figure>
 <fk-fig-bendpoint-list/>
 </foreign-key-figure>
-<foreign-key-column column-name="productEan" referenced-key-column-name="productean"/>
+<foreign-key-column column-name="productEan" referenced-key-column-name="productEan"/>
 </foreign-key>
 <foreign-key alias="" name="FK_Sales_4" on-delete="" on-update="" referenced-key="PK_PAYMENT" referenced-table="Payment" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7e40">
 <foreign-key-description/>
@@ -274,7 +274,7 @@
 <foreign-key-figure>
 <fk-fig-bendpoint-list/>
 </foreign-key-figure>
-<foreign-key-column column-name="shipDate" referenced-key-column-name="dateid"/>
+<foreign-key-column column-name="shipDate" referenced-key-column-name="dateId"/>
 </foreign-key>
 <foreign-key alias="" name="FK_Sales_6" on-delete="" on-update="" referenced-key="PK_DATE" referenced-table="Date" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7c4e">
 <foreign-key-description/>
@@ -283,7 +283,7 @@
 <fk-fig-target-terminal x="23" y="37"/>
 <fk-fig-bendpoint-list/>
 </foreign-key-figure>
-<foreign-key-column column-name="orderDate" referenced-key-column-name="dateid"/>
+<foreign-key-column column-name="orderDate" referenced-key-column-name="dateId"/>
 </foreign-key>
 </foreign-key-list>
 <index-list/>
@@ -365,7 +365,7 @@
 <table-description/>
 <table-figure-bounds height="118" width="117" x="478" y="666"/>
 <column-list>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="dateid" remarks="" uid="2f5a092e:149c37ddb83:-7f33">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="dateId" remarks="" uid="2f5a092e:149c37ddb83:-7f33">
 <column-description/>
 <data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
 <variant type-name-pattern="INTEGER"/>
@@ -398,7 +398,7 @@
 </column-list>
 <primary-key alias="" name="PK_DATE" remarks="" uid="2f5a092e:149c37ddb83:-7f36">
 <primary-key-description/>
-<primary-key-column name="dateid"/>
+<primary-key-column name="dateId"/>
 </primary-key>
 <unique-key-list/>
 <foreign-key-list/>

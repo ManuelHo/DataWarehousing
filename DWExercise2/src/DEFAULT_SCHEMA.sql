@@ -1,12 +1,12 @@
-CREATE TABLE Produkt (
-       productean CHAR(14) NOT NULL
+CREATE TABLE Product (
+       productEan CHAR(14) NOT NULL
      , salesUnit VARCHAR(10)
      , prodDescription VARCHAR(200)
      , proName VARCHAR(50)
      , categoryId INTEGER
      , catDescription VARCHAR(200)
      , catName VARCHAR(50)
-     , PRIMARY KEY (productean)
+     , PRIMARY KEY (productEan)
 );
 
 CREATE TABLE Payment (
@@ -66,7 +66,7 @@ CREATE TABLE Sales (
      , CONSTRAINT FK_Sales_2 FOREIGN KEY (customerId)
                   REFERENCES Customer (customerId)
      , CONSTRAINT FK_Sales_3 FOREIGN KEY (productEan)
-                  REFERENCES Produkt (productean)
+                  REFERENCES Product (productEan)
      , CONSTRAINT FK_Sales_4 FOREIGN KEY (paymentId)
                   REFERENCES Payment (paymentId)
      , CONSTRAINT FK_Sales_5 FOREIGN KEY (shipDate)
