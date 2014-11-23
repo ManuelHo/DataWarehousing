@@ -293,7 +293,7 @@
 </table>
 <table alias="" name="Payment" remarks="" uid="2f5a092e:149c37ddb83:-7f45">
 <table-description/>
-<table-figure-bounds height="193" width="196" x="496" y="414"/>
+<table-figure-bounds height="211" width="196" x="496" y="414"/>
 <column-list>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="paymentId" remarks="" uid="2f5a092e:149c37ddb83:-7f41">
 <column-description/>
