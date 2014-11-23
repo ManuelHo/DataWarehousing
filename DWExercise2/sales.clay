@@ -367,25 +367,25 @@
 <variant type-name-pattern="INTEGER"/>
 </data-type>
 </column>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="day" remarks="" uid="2f5a092e:149c37ddb83:-7f32">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="nDay" remarks="" uid="2f5a092e:149c37ddb83:-7f32">
 <column-description/>
 <data-type jdbc-type="-6" name="TINYINT" selected-variant-pattern="TINYINT">
 <variant type-name-pattern="TINYINT"/>
 </data-type>
 </column>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="month" remarks="" uid="2f5a092e:149c37ddb83:-7f31">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="nMonth" remarks="" uid="2f5a092e:149c37ddb83:-7f31">
 <column-description/>
 <data-type jdbc-type="-6" name="TINYINT" selected-variant-pattern="TINYINT">
 <variant type-name-pattern="TINYINT"/>
 </data-type>
 </column>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="quarter" remarks="" uid="2f5a092e:149c37ddb83:-7f30">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="nQuarter" remarks="" uid="2f5a092e:149c37ddb83:-7f30">
 <column-description/>
 <data-type jdbc-type="-6" name="TINYINT" selected-variant-pattern="TINYINT">
 <variant type-name-pattern="TINYINT"/>
 </data-type>
 </column>
-<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="year" remarks="" uid="2f5a092e:149c37ddb83:-7f2f">
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="nYear" remarks="" uid="2f5a092e:149c37ddb83:-7f2f">
 <column-description/>
 <data-type jdbc-type="5" name="SMALLINT" selected-variant-pattern="SMALLINT">
 <variant type-name-pattern="SMALLINT"/>
