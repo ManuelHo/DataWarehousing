@@ -25,10 +25,10 @@ CREATE TABLE Payment (
 
 CREATE TABLE DateTable (
        dateId INTEGER NOT NULL
-     , day TINYINT
-     , month TINYINT
-     , quarter TINYINT
-     , year SMALLINT
+     , nDay TINYINT
+     , nMonth TINYINT
+     , nQuarter TINYINT
+     , nYear SMALLINT
      , PRIMARY KEY (dateId)
 );
 
