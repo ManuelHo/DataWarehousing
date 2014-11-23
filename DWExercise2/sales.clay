@@ -158,7 +158,7 @@
 </table>
 <table alias="" name="Sales" remarks="" uid="2f5a092e:149c37ddb83:-7f53">
 <table-description/>
-<table-figure-bounds height="-1" width="-1" x="80" y="413"/>
+<table-figure-bounds height="261" width="183" x="80" y="413"/>
 <column-list>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="orderNo" remarks="" uid="2f5a092e:149c37ddb83:-7f4f">
 <column-description/>
@@ -293,7 +293,7 @@
 </table>
 <table alias="" name="Payment" remarks="" uid="2f5a092e:149c37ddb83:-7f45">
 <table-description/>
-<table-figure-bounds height="173" width="196" x="496" y="414"/>
+<table-figure-bounds height="193" width="196" x="496" y="414"/>
 <column-list>
 <column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="paymentId" remarks="" uid="2f5a092e:149c37ddb83:-7f41">
 <column-description/>

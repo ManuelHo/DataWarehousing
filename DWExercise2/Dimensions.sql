@@ -9,11 +9,11 @@ CREATE DIMENSION CustomerDim
 	HIERARCHY corporateCustTypeBranch (custType CHILD OF corporation CHILD OF customerId)
 	ATTRIBUTE customerId DETERMINES (email, webURL, telephone, mobile, address)
 	ATTRIBUTE corporation DETERMINES (corpName)
-	ATTRIBUTE privatePerson DETERMINES (givenName, familiyName);
+	ATTRIBUTE privatePerson DETERMINES (givenName, familyName);
 
 CREATE DIMENSION PaymentDim
 	LEVEL paymentId IS (Payment.paymentId)
-	LEVEL accountNo IS (Payment.paymentId)
+	LEVEL accountNo IS (Payment.accountNo)
 	LEVEL ccNo IS (Payment.ccNo)
 	LEVEL pmType IS (Payment.pmType)
 	LEVEL issuedBy IS (Payment.issuedBy)
