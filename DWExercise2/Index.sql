@@ -10,6 +10,8 @@ CREATE INDEX IDX_SALE_ORDERDATE ON Sale (orderDate) NOPARALLEL;
 
 CREATE BITMAP INDEX IDX_SALE_MODEOFSHIPMENT ON Sale (modeOfShipment) NOPARALLEL;
 
+-- BITMAP JOIN INDEXES:
+
 CREATE BITMAP INDEX IDX_PRODUCT_SALE ON Sale(prodName, prodDescription, categoryId, catDescription)
 	FROM Sale s, Product p
 	WHERE s.productEan = p.productEan;
@@ -23,5 +25,5 @@ CREATE BITMAP INDEX IDX_ORDER_SALE ON Sale (nDay, nMonth, nQuarter , nYear)
 	WHERE s.shipDate = d.dateId;
 
 REATE BITMAP INDEX IDX_PAYMENT_SALE ON Sale(pmType, actOwner, ccOwner)
-	FROM Sale s, Date d
+	FROM Sale s, DateTable d
 	WHERE s.paymentId = d.paymentId;
