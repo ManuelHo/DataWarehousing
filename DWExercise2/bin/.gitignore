@@ -1,3 +1,6 @@
 /DEFAULT_SCHEMA.sql
 /CreateSchema
 /CreateSchema.sql
+/Constraints.sql
+/Dimensions.sql
+/Index.sql
