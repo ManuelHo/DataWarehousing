@@ -265,14 +265,14 @@
 </foreign-key-figure>
 <foreign-key-column column-name="paymentId" referenced-key-column-name="paymentId"/>
 </foreign-key>
-<foreign-key alias="" name="FK_Sales_5" on-delete="" on-update="" referenced-key="PK_DATE" referenced-table="Date" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7c7e">
+<foreign-key alias="" name="FK_Sales_5" on-delete="" on-update="" referenced-key="PK_DATETABLE" referenced-table="DateTable" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7c7e">
 <foreign-key-description/>
 <foreign-key-figure>
 <fk-fig-bendpoint-list/>
 </foreign-key-figure>
 <foreign-key-column column-name="shipDate" referenced-key-column-name="dateId"/>
 </foreign-key>
-<foreign-key alias="" name="FK_Sales_6" on-delete="" on-update="" referenced-key="PK_DATE" referenced-table="Date" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7c4e">
+<foreign-key alias="" name="FK_Sales_6" on-delete="" on-update="" referenced-key="PK_DATETABLE" referenced-table="DateTable" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2f5a092e:149c37ddb83:-7c4e">
 <foreign-key-description/>
 <foreign-key-figure>
 <fk-fig-source-terminal x="155" y="214"/>
@@ -357,7 +357,7 @@
 <foreign-key-list/>
 <index-list/>
 </table>
-<table alias="" name="Date" remarks="" uid="2f5a092e:149c37ddb83:-7f37">
+<table alias="" name="DateTable" remarks="" uid="2f5a092e:149c37ddb83:-7f37">
 <table-description/>
 <table-figure-bounds height="118" width="117" x="478" y="666"/>
 <column-list>
@@ -392,7 +392,7 @@
 </data-type>
 </column>
 </column-list>
-<primary-key alias="" name="PK_DATE" remarks="" uid="2f5a092e:149c37ddb83:-7f36">
+<primary-key alias="" name="PK_DATETABLE" remarks="" uid="2f5a092e:149c37ddb83:-7f36">
 <primary-key-description/>
 <primary-key-column name="dateId"/>
 </primary-key>

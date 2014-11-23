@@ -32,8 +32,8 @@ CREATE DIMENSION ProductDim
 	ATTRIBUTE categoryId DETERMINES (catDescription, catName);
 
 CREATE DIMENSION DatumDim
-	LEVEL day IS (Date.day)
-	LEVEL month IS (Date.month)
-	LEVEL quarter IS (Date.quarter)
-	LEVEL year IS (Date.year)
+	LEVEL day IS (DateTable.day)
+	LEVEL month IS (DateTable.month)
+	LEVEL quarter IS (DateTable.quarter)
+	LEVEL year IS (DateTable.year)
 	HIERARCHY calendar (day CHILD OF month CHILD OF quarter CHILD OF year);
