@@ -23,7 +23,7 @@ CREATE TABLE Payment (
      , PRIMARY KEY (paymentId)
 );
 
-CREATE TABLE Date (
+CREATE TABLE DateTable (
        dateId INTEGER NOT NULL
      , day TINYINT
      , month TINYINT
@@ -70,8 +70,8 @@ CREATE TABLE Sales (
      , CONSTRAINT FK_Sales_4 FOREIGN KEY (paymentId)
                   REFERENCES Payment (paymentId)
      , CONSTRAINT FK_Sales_5 FOREIGN KEY (shipDate)
-                  REFERENCES Date (dateId)
+                  REFERENCES DateTable (dateId)
      , CONSTRAINT FK_Sales_6 FOREIGN KEY (orderDate)
-                  REFERENCES Date (dateId)
+                  REFERENCES DateTable (dateId)
 );
 
