@@ -2,7 +2,7 @@ CREATE TABLE Product (
        productEan CHAR(14) NOT NULL
      , salesUnit VARCHAR(10)
      , prodDescription VARCHAR(200)
-     , proName VARCHAR(50)
+     , prodName VARCHAR(50)
      , categoryId INTEGER
      , catDescription VARCHAR(200)
      , catName VARCHAR(50)
@@ -19,6 +19,7 @@ CREATE TABLE Payment (
      , iban VARCHAR(34)
      , bic VARCHAR(14)
      , actOwner VARCHAR(100)
+     , pmType VARCHAR(10)
      , accountNo VARCHAR(34)
      , PRIMARY KEY (paymentId)
 );
@@ -44,6 +45,7 @@ CREATE TABLE Customer (
      , familyName VARCHAR(20)
      , custType CHAR(1)
      , corporation VARCHAR(20)
+     , address CHAR(100)
      , privatePerson VARCHAR(20)
      , PRIMARY KEY (customerId)
 );
